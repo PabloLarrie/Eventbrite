@@ -14,13 +14,16 @@ class EventSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
+            "slug",
             "location",
             "description",
             "start_date",
             "end_date",
-            "image",
             "is_online",
             "tickets",
+            "get_absolute_url",
+            "get_image",
+            "get_thumbnail",
         ]
 
 
@@ -30,7 +33,11 @@ class EventSimpleSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
+            "get_image",
+            "get_thumbnail",
             "is_online",
+            "location",
+
         ]
 
 

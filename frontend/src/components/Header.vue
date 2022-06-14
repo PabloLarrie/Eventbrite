@@ -1,16 +1,15 @@
 -<template>
   <div id="header">
     <b-navbar toggleable="lg">
-      <a href="/"><img src="@/assets/logo.png" alt=""></a>
-      <b-navbar-brand class="logo" to="/">ventbrite</b-navbar-brand>
+      <a class="navbar-header" href="/"><img src="@/assets/logo.png" alt=""></a>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="position-absolute end-50">
-          <b-button pill class="button pt-2 pb-2 pe-4 ps-4">
-            <router-link class="router-link " to="#" >Events</router-link>
+          <b-button pill class="button pt-2 pb-2 pe-3 ps-3">
+            <router-link class="router-link " to="#" >Online</router-link>
           </b-button>
-          <b-button pill class="button pt-2 pb-2 pe-4 ps-4">
-            <router-link class="router-link" to="#">Things</router-link>
+          <b-button pill class="button">
+            <router-link class="router-link" to="#">Offline</router-link>
           </b-button>
         </b-navbar-nav>
         <b-navbar-nav class="position-absolute end-0 pe-3">
@@ -72,36 +71,20 @@ export default {
 
 <style scoped>
 
-img {
-  width: 32px;
-  height: 32px;
+a, img {
+  width: 28%;
+  height: 18%;
+  margin-left: 1%;
 }
 
 #header {
   background-color: #2e2831;
 }
 
-.logo {
-	color: #ded3ef;
-  font-size: 28px;
-}
-
-.logo:hover {
-	color: #984134;
-}
-
-
 .button {
-  /*padding: 10px 40px;*/
 	background-color: rgba(71, 60, 79, 0.53);
-	/*border: none;*/
-	/*cursor: pointer;*/
 	transition: all 0.3s ease 0s;
-	/*border: 1px solid #6c1aef;*/
-	/*font-size: 15px;*/
 	color: #ded3ef;
-	/*padding: 0.4rem 2.5;*/
-	/*font-weight: 700;*/
 	margin-left: 10px;
 }
 

@@ -6,3 +6,5 @@ from backend.events.models import Event, Ticket
 admin.site.register(Event)
 admin.site.register(Ticket)
 admin.site.register(Permission)
+
+readonly_fields = 'admin_photo'
