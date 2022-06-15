@@ -9,6 +9,7 @@ django-cors-headers
 djangorestframework
 djangorestframework-filters==1.0.0.dev0
 djangorestframework-simplejwt
+drf-nested-routers
 black
 pep8
 pylint

@@ -6,7 +6,7 @@
 #
 asgiref==3.5.2
     # via django
-astroid==2.11.5
+astroid==2.11.6
     # via pylint
 attrs==21.4.0
     # via pytest
@@ -24,6 +24,7 @@ django==4.0.5
     #   django-filter
     #   djangorestframework
     #   djangorestframework-simplejwt
+    #   drf-nested-routers
 django-cors-headers==3.13.0
     # via -r requirements.in
 django-extensions==3.1.5
@@ -37,9 +38,12 @@ djangorestframework==3.13.1
     #   -r requirements.in
     #   djangorestframework-filters
     #   djangorestframework-simplejwt
+    #   drf-nested-routers
 djangorestframework-filters==1.0.0.dev0
     # via -r requirements.in
 djangorestframework-simplejwt==5.2.0
+    # via -r requirements.in
+drf-nested-routers==0.93.4
     # via -r requirements.in
 factory-boy==3.2.1
     # via -r requirements.in

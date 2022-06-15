@@ -1,0 +1,68 @@
+[
+{
+    "model": "events.ticket",
+    "pk": 1,
+    "fields": {
+        "name": "Lakehouse Bar",
+        "price": 22,
+        "total_amount": 50,
+        "left_amount": 50,
+        "currency": "$"
+    }
+},
+{
+    "model": "events.ticket",
+    "pk": 2,
+    "fields": {
+        "name": "Lakehouse Experience Pass",
+        "price": 35,
+        "total_amount": 20,
+        "left_amount": 20,
+        "currency": "$"
+    }
+},
+{
+    "model": "events.ticket",
+    "pk": 3,
+    "fields": {
+        "name": "Free RSVP (Donations Appreciated)",
+        "price": 0,
+        "total_amount": 200,
+        "left_amount": 135,
+        "currency": "$"
+    }
+},
+{
+    "model": "events.ticket",
+    "pk": 4,
+    "fields": {
+        "name": "Guaranteed Admission",
+        "price": 10,
+        "total_amount": 100,
+        "left_amount": 48,
+        "currency": "$"
+    }
+},
+{
+    "model": "events.ticket",
+    "pk": 5,
+    "fields": {
+        "name": "Recital de Verano",
+        "price": 10,
+        "total_amount": 200,
+        "left_amount": 100,
+        "currency": "€"
+    }
+},
+{
+    "model": "events.ticket",
+    "pk": 6,
+    "fields": {
+        "name": "45 Mins Consultation + Love Heals",
+        "price": 20,
+        "total_amount": 1000,
+        "left_amount": 988,
+        "currency": "$"
+    }
+}
+]

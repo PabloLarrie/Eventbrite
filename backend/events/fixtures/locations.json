@@ -1,0 +1,16 @@
+[
+{
+    "model": "events.location",
+    "pk": 1,
+    "fields": {
+        "name": "San Franciso"
+    }
+},
+{
+    "model": "events.location",
+    "pk": 2,
+    "fields": {
+        "name": "Madrid"
+    }
+}
+]

@@ -4,28 +4,16 @@ up:
 down:
 	docker-compose down
 
-dest:
-	docker exec -it hsdecker_postgres_1 bash
-
-test:
-	docker-compose run eventbrite pytest -c pytest.ini
-
 pip-compile:
 	docker-compose run eventbrite pip-compile requirements.in > requirements.txt
 
 shell:
 	docker-compose run eventbrite python manage.py shell
 
-shell+:
-	docker-compose run eventbrite python manage.py shell_plus
-
 chown:
 	sudo chown `whoami` -R .
 
 freeze_dependencies: pip-compile chown
-
-run:
-	docker-compose run eventbrite python manage.py runserver
 
 build:
 	docker-compose build
@@ -36,20 +24,14 @@ migrate:
 migrations:
 	docker-compose run eventbrite python manage.py makemigrations
 
-manage:
-	docker-compose run eventbrite python manage.py $(c)
+dumpevents:
+	docker-compose run eventbrite python manage.py dumpdata events.Event -o backend/events/fixtures/events.json --indent 4
 
+dumptickets:
+	docker-compose run eventbrite python manage.py dumpdata events.Ticket -o backend/events/fixtures/tickets.json --indent 4
 
-#installfrontend:
-#	${DOCKER_FRONTEND} npm install
-#
-#installvuestrap:
-#	${DOCKER_FRONTEND} npm install vue bootstrap bootstrap-vue
-#
-#addvuestrap:
-#	${DOCKER_FRONTEND} vue add bootstrap-vue
-#
-#installrouter:
-#	${DOCKER_FRONTEND} npm install vue-router
-#
-#vuestrap: installvuestrap addvuestrap
+dumplocations:
+	docker-compose run eventbrite python manage.py dumpdata events.Location -o backend/events/fixtures/locations.json --indent 4
+
+loaddata:
+	docker-compose run eventbrite python manage.py loaddata backend/events/fixtures/*
