@@ -1,4 +1,3 @@
-# from rest_framework_nested import routers
 from django.urls import path, include
 from rest_framework_nested import routers
 
@@ -12,7 +11,6 @@ router.register(r'events', EventViewSet, basename='events')
 files_router = routers.NestedSimpleRouter(router, r"events", lookup='event')
 files_router.register(r'tickets', TicketViewSet, basename='ticketevent')
 
-# router.register(r"events", EventViewSet, basename="events")
 router.register(r"tickets", TicketViewSet, basename="tickets")
 
 urlpatterns = [

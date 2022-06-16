@@ -28,7 +28,7 @@
         "name": "Free RSVP (Donations Appreciated)",
         "price": 0,
         "total_amount": 200,
-        "left_amount": 135,
+        "left_amount": 0,
         "currency": "$"
     }
 },
@@ -46,17 +46,6 @@
 {
     "model": "events.ticket",
     "pk": 5,
-    "fields": {
-        "name": "Recital de Verano",
-        "price": 10,
-        "total_amount": 200,
-        "left_amount": 100,
-        "currency": "€"
-    }
-},
-{
-    "model": "events.ticket",
-    "pk": 6,
     "fields": {
         "name": "45 Mins Consultation + Love Heals",
         "price": 20,

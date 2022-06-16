@@ -24,30 +24,10 @@ class EventSerializer(serializers.ModelSerializer):
             "location",
             "description",
             "start_date",
-            "end_date",
             "is_online",
-            "tickets",
             "tickets_list",
             "get_image",
             "get_thumbnail",
-        ]
-
-
-class EventSimpleSerializer(serializers.ModelSerializer):
-    location = serializers.SerializerMethodField()
-
-    def get_location(self, object):
-        return Location.objects.get(id=object.location.id).name
-
-    class Meta:
-        model = Event
-        fields = [
-            "id",
-            "name",
-            "get_image",
-            "get_thumbnail",
-            "is_online",
-            "location",
         ]
 
 

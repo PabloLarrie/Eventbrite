@@ -27,8 +27,8 @@
         "image": "uploads/lakehouse.jpg",
         "thumbnail": "uploads/uploads/lakehouse.jpg",
         "tickets": [
-            2,
-            1
+            1,
+            2
         ]
     }
 },
@@ -54,23 +54,6 @@
     "model": "events.event",
     "pk": 4,
     "fields": {
-        "name": "Recital Rosanna Cooper",
-        "location": 2,
-        "description": "ROSANNA COOPER - mezzo soprano. Nació en Sheffield. Es graduada del Royal College of Music, donde estudió con Rosa Mannion y obtuvo una Maestría con distinción y una Licenciatura con honores de primera clase. Fue becaria de TSH Dr. Prince Donatus y Princess Heidi Von Hohenzollern, recibió el premio Helen Marjorie Tonks y recibió el apoyo de Josephine Baker Trust. Ha logrado un éxito considerable en numerosos concursos internacionales donde obtuvo el 1er premio en el Concurso Novaria en el Palau de la Musica, Barcelona, ​​1er premio en el festival Verão Clássico, Portugal, y el Premio Pepe Eizaga Zarzuela en el Concurso Internacional de canto ' Ciudad de Logroño'.",
-        "start_date": "2022-06-12",
-        "end_date": "2022-06-23",
-        "is_online": false,
-        "image": "uploads/rosanna_vcEATLv.jpg",
-        "thumbnail": "uploads/uploads/rosanna_vcEATLv.jpg",
-        "tickets": [
-            5
-        ]
-    }
-},
-{
-    "model": "events.event",
-    "pk": 5,
-    "fields": {
         "name": "The Wisdom of the Chakra System",
         "location": 2,
         "description": "A webinar to better understand our chakras, energy centers that govern different aspects of our body and mind. Chakras develops over our lifespan and can be related back to our physical, emotional and spiritual health. Awareness of each chakra can help us address old wounds and balance certain aspects of our lives. Issues such as scarcity mindset, lack of confidence, difficulty with expression, or trouble making decisions can be improved with this knowledge. Our experiences and our ability to process emotions can affect our chakras development and when any one of them are imbalanced it will eventually affect its partners.",
@@ -80,13 +63,13 @@
         "image": "uploads/chakras.jpg",
         "thumbnail": "uploads/uploads/chakras.jpg",
         "tickets": [
-            6
+            5
         ]
     }
 },
 {
     "model": "events.event",
-    "pk": 6,
+    "pk": 5,
     "fields": {
         "name": "Clases de flamenco gratuitas",
         "location": 2,

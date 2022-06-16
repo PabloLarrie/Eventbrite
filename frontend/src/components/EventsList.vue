@@ -26,7 +26,6 @@
       </div>
       <p>Filtering events by: <strong>{{ online_status}}</strong></p>
 
-<!--      <div style="margin:30px 45px; display:flex;">-->
       <b-navbar >
         <div
           v-for="event in items"
@@ -37,12 +36,11 @@
             v-if="event.is_online && online_status === 'Online' ||
             !event.is_online && online_status === 'Offline' ||
             online_status === 'all'"
-            no-body
             style="max-width: 20rem; max-height:25rem;"
             @click="imgClick(event.id)"
             >
             <img
-                :src="event.get_image"
+                :src="event.get_thumbnail"
                 alt="image" class="rounded"
                 style="width: 20rem; height:20rem; object-fit: cover;"
             />
@@ -70,13 +68,6 @@ export default {
     return {
       items: [],
       online_status: "all",
-      columns: [
-        "id",
-        "name",
-        "get_image",
-        "get_thumbnail",
-        "is_online",
-      ],
     };
   },
   mounted() {

@@ -22,6 +22,7 @@
             <b-card-sub-title class="text-center mb-5" style="font-size: 14px;">
               {{ items.description }}</b-card-sub-title>
             <b-card-sub-title class="text-center mb-5">Starts: {{ items.start_date }}</b-card-sub-title>
+            <b-card-sub-title class="text-center mb-3">{{ items.is_online ? 'Online' : '' }}</b-card-sub-title>
             <div class="col text-center">
               <b-button v-on:click="ticketClick(items.id)" variant="outline-info">Buy Tickets</b-button>
             </div>
@@ -69,5 +70,5 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 </style>

@@ -6,9 +6,6 @@
     <b-row>
       <slot name="body" />
     </b-row>
-<!--    <b-row>-->
-<!--      <slot name="footer" />-->
-<!--    </b-row>-->
   </div>
 </template>
 

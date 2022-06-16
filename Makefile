@@ -35,3 +35,5 @@ dumplocations:
 
 loaddata:
 	docker-compose run eventbrite python manage.py loaddata backend/events/fixtures/*
+
+setup: build migrate loaddata
