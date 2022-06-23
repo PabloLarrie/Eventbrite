@@ -1,4 +1,4 @@
-Stores from different countries small example
+Events platform with tickets
 =========================================================
 
 ## Coments:
